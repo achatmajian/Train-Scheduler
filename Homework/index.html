@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Scheduler</title>
+
+    <!-- Bulma Style -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Bulma Hero/Title -->
+    <section class="hero">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title" id="hero-title">
+                Train Scheduler
+            </h1>
+            <h2 class="subtitle" id="hero-subtitle">
+              Add your favorite trains to see info!
+            </h2>
+          </div>
+        </div>
+      </section>
+
+    <!-- Input Form-->
+    <section class="input-form">
+           
+        <!-- Input Form Heading -->
+        <section class="section">
+                    <div class="container" id="form-title">
+                      <h2 class="title">Add Train</h2>
+                      <h3 class="subtitle">
+                        Enter your train information to see train times
+                      </h3>
+                    </div>
+                  </section> <!-- Input Form Heading Close -->
+        
+                <!-- Input Form Fields -->
+                <section class="input-fields"> 
+                    <!-- Train Name Input Field --> 
+                    <div class="field">
+                        <label class="label">Train Name</label>
+                        <div class="control">
+                          <input class="input" type="text" placeholder="Enter train name here">
+                        </div>
+                        </div> <!-- Train Name Input Field Close --> 
+               
+                    <!-- Desination Input Field --> 
+                    <div class="field">
+                        <label class="label">Destination</label>
+                        <div class="control">
+                          <input class="input" type="text" placeholder="Enter destination here">
+                        </div>
+                        </div> <!-- Desination Input Field Close-->
+
+                    <!-- Train Time Input Field --> 
+                    <div class="field">
+                            <label class="label">Train Time</label>
+                            <div class="control">
+                              <input class="input" type="text" placeholder="Enter train time here">
+                            </div>
+                            </div> <!-- Train Time Input Field Close-->
+
+                    <!-- Frequency Input Field --> 
+                    <div class="field">
+                            <label class="label">Frequency (Minutes)</label>
+                            <div class="control">
+                              <input class="input" type="text" placeholder="Enter train frequency here">
+                            </div>
+                            </div> <!-- Frequency Input Field Close-->
+
+                      <!-- Input Form Buttons -->
+                      <div class="input-buttons">
+                      <div class="field is-grouped">
+                        <div class="control">
+                          <button class="button is-link" id="submit-button">Submit</button>
+                        </div>
+                        <div class="control">
+                          <button class="button is-link is-light" id="cancel-button">Cancel</button>
+                        </div>
+                      </div>
+                    </div> <!-- Input Form Buttons Close -->
+
+
+
+                </section> <!-- Input Form Fields Close -->
+    </section> <!-- Input Form Close -->
+
+    <!-- Output Form-->
+    <section class="output-form">
+           
+            <!-- Output Form Heading -->
+            <section class="section">
+                <div class="container" id="form-title">
+                    <h2 class="title">Train Schedule</h2>
+                    <h3 class="subtitle">View your train information below</h3>
+                </div>
+            </section> <!-- Output Form Heading Close -->
+            
+            <!-- Output Columns -->
+            <section class="output-titles-columns">
+            <div class="columns">
+                <div class="column">
+                    <strong>Train Name</strong>
+                    <p>Filler Text</p>
+                </div>
+                <div class="column">
+                    <strong>Destination</strong>
+                    <p>Filler Text</p>
+                </div>
+                <div class="column">
+                    <strong>Frequency (Minutes)</strong>
+                    <p>Filler Text</p>
+                </div>
+                <div class="column">
+                    <strong>Next Arrival</strong>
+                    <p>Filler Text</p>
+                </div>
+                <div class="column">
+                    <strong>Minutes Away</strong>
+                    <p>Filler Text</p>
+                </div>
+                </div> 
+            </section> <!-- Output Titles Columns Section Close -->
+           
+            <!-- Commenting out this section as test
+            Empty column divs for js to populate content from input
+            <section class="output-content-columns">
+            <div class="columns">
+                    <div class="column" id="column1">
+                        
+                    </div>
+                    <div class="column" id="column2">
+                        
+                    </div>
+                    <div class="column" id="column3">
+                        
+                    </div>
+                    <div class="column" id="column4">
+                        
+                    </div>
+                    <div class="column" id="column5">
+                        
+                    </div>
+                    </div> Output Content Columns Close
+
+            </section> Output Columns Section Close -->
+            
+    
+            <!-- Output Form Buttons -->
+            <div class="output-buttons">
+                    <div class="field is-grouped">
+                      <div class="control">
+                        <button class="button is-link is-light" id="clear-selected-button">Clear Selected</button>
+                      </div>
+                      <div class="control">
+                        <button class="button is-link is-light" id="clear-all-button">Clear All</button>
+                      </div>
+                    </div>
+                  </div> <!-- Ouput Form Buttons Close -->
+    
+        </section> <!-- Output Form Close -->
+
+</body>
+</html>
