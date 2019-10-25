@@ -54,7 +54,7 @@
                     <div class="field">
                         <label class="label">Train Name</label>
                         <div class="control">
-                          <input class="input" id="input-field" type="text" placeholder="Enter train name here">
+                          <input class="input" id="train-name-input" type="text" placeholder="Enter train name here">
                         </div>
                         </div> <!-- Train Name Input Field Close --> 
                
@@ -62,7 +62,7 @@
                     <div class="field">
                         <label class="label">Destination</label>
                         <div class="control">
-                          <input class="input" id="input-field" type="text" placeholder="Enter destination here">
+                          <input class="input" id="destination-input" type="text" placeholder="Enter destination here">
                         </div>
                         </div> <!-- Desination Input Field Close-->
 
@@ -70,7 +70,7 @@
                     <div class="field">
                             <label class="label">Train Time</label>
                             <div class="control">
-                              <input class="input" id="input-field" type="text" placeholder="Enter train time here">
+                              <input class="input" id="train-time-input" type="text" placeholder="Enter train time here">
                             </div>
                             </div> <!-- Train Time Input Field Close-->
 
@@ -78,7 +78,7 @@
                     <div class="field">
                             <label class="label">Frequency (Minutes)</label>
                             <div class="control">
-                              <input class="input" id="input-field" type="text" placeholder="Enter train frequency here">
+                              <input class="input" id="frequency-input" type="text" placeholder="Enter train frequency here">
                             </div>
                             </div> <!-- Frequency Input Field Close-->
 
@@ -111,36 +111,25 @@
             </section> <!-- Output Form Heading Close -->
             
             <!-- Output Table -->
-            <table class="display" id="output-table">
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th id="column1">Train Name</th>
-                            <th id="column2">Destination</th>
-                            <th id="column3">Next Arrival</th>
-                            <th id="column4">Frequency (Minutes)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td></td>
-                            <td id="text1"></td>
-                            <td id="text2"></td>
-                            <td id="text3"></td>
-                            <td id="text4"></td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <th></th>
-                            <th id="column1">Train Name</th>
-                            <th id="column2">Destination</th>
-                            <th id="column3">Next Arrival</th>
-                            <th id="column4">Frequency (Minutes)</th>
-                            
-                        </tr>
-                    </tfoot>
-                </table>
+            <div id="train-name-output">
+              <p><strong>Train Name</strong></p>
+              <ul></ul>
+            </div>
+
+            <div id="destination-output">
+                <p><strong>Destination</strong></p>
+                <ul></ul>
+              </div>
+
+            <div id="train-time-output">
+              <p><strong>Train Time</strong></p>
+              <ul></ul>
+            </div>
+
+            <div id="frequency-output">
+                <p><strong>Frequency (Minutes)</strong></p>
+                <ul></ul>
+              </div>
 
             <!-- Commenting out this section as test
             Output Columns

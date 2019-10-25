@@ -1,65 +1,52 @@
-$(document).ready(function() {
-    $('#output-table').DataTable( {
-        columnDefs: [ {
-            orderable: false,
-            className: 'select-checkbox',
-            targets:   0
-        } ],
-        select: {
-            style:    'os',
-            selector: 'td:first-child'
-        },
-        order: [[ 1, 'asc' ]]
-    } );
-} );
-
 
 // Make each train entry an object, with variables as info
 
 let train = {
-    trainName: "",
-    destination: "",
-    trainTime: "",
-    frequency: "",
-};
+    trainName: $("#train-name-input").val(),
+    destination: $("#destination-input").val(),
+    trainTime: $("#train-time-input").val(),
+    frequency: $("#frequency-input").val(),
+}
 
-// Make an empty array for train entries to go into
+console.log(trainName);
+console.log(destination);
+console.log(trainTime);
+console.log(frequency);
 
-let trainArray = [];
-
-// Have train object data populate in empty div for train info in output field
-
-function pushOject(train){
-    train.push(trainArray)
-};
 
 // For each subsequent train that the user adds, append to child the new train object into output field
 // Onclick function for submit button
-
+function submitButton(){
 $("#submit-button").click(function(){
-    document.getElementById("#input-field").submit();
-    $("#text1").append(trainName);
-    $("#text2").append(destination);
-    $("#text3").append(trainTime);
-    $("#text4").append(frequency);
-}
+    $(trainName).appendTo("#train-name-output");
+    $(destination).appendTo("#desintation-output");
+    $(trainTime).appendTo("#train-time-output");
+    $(frequency).appendTo("#frequency-output");
+});
+};
 
 // Onclick function for cancel button
 
 $("#cancel-button").click(function(){
-    document.getElementById("input-field").reset();
-}
+    $("#train-name-input")[0].reset();
+    $("#destination-input")[0].reset();
+    $("#train-time-input")[0].reset();
+    $("#frequency-input")[0].reset();
+});
+
 
 // Onclick function for clear selected button
 
-$("#clear-selected-button").click(function(){
-
-}
+//$("#clear-selected-button").click(function(){
+//}
 
 // Onclick function for clear all button
 
 $("#clear-all-button").click(function(){
-
-}
+    $("#train-name-output")[0].reset();
+    $("#destination-output")[0].reset();
+    $("#train-time-output")[0].reset();
+    $("#frequency-output")[0].reset();
+});
 
 // Submit fields to local storage
