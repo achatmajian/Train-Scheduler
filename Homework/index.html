@@ -6,14 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Train Scheduler</title>
 
-    <!-- Bulma Style -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/select/1.3.1/css/select.dataTables.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-    <!-- Custom Style -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- JS -->
+    <script src="app.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/select/1.3.1/js/dataTables.select.min.js"></script>
+
 
 </head>
 <body>
-    <!-- Bulma Hero/Title -->
+    <!-- Hero/Title -->
     <section class="hero">
         <div class="hero-body">
           <div class="container">
@@ -46,7 +54,7 @@
                     <div class="field">
                         <label class="label">Train Name</label>
                         <div class="control">
-                          <input class="input" type="text" placeholder="Enter train name here">
+                          <input class="input" id="input-field" type="text" placeholder="Enter train name here">
                         </div>
                         </div> <!-- Train Name Input Field Close --> 
                
@@ -54,7 +62,7 @@
                     <div class="field">
                         <label class="label">Destination</label>
                         <div class="control">
-                          <input class="input" type="text" placeholder="Enter destination here">
+                          <input class="input" id="input-field" type="text" placeholder="Enter destination here">
                         </div>
                         </div> <!-- Desination Input Field Close-->
 
@@ -62,7 +70,7 @@
                     <div class="field">
                             <label class="label">Train Time</label>
                             <div class="control">
-                              <input class="input" type="text" placeholder="Enter train time here">
+                              <input class="input" id="input-field" type="text" placeholder="Enter train time here">
                             </div>
                             </div> <!-- Train Time Input Field Close-->
 
@@ -70,7 +78,7 @@
                     <div class="field">
                             <label class="label">Frequency (Minutes)</label>
                             <div class="control">
-                              <input class="input" type="text" placeholder="Enter train frequency here">
+                              <input class="input" id="input-field" type="text" placeholder="Enter train frequency here">
                             </div>
                             </div> <!-- Frequency Input Field Close-->
 
@@ -102,7 +110,41 @@
                 </div>
             </section> <!-- Output Form Heading Close -->
             
-            <!-- Output Columns -->
+            <!-- Output Table -->
+            <table class="display" id="output-table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th id="column1">Train Name</th>
+                            <th id="column2">Destination</th>
+                            <th id="column3">Next Arrival</th>
+                            <th id="column4">Frequency (Minutes)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td id="text1"></td>
+                            <td id="text2"></td>
+                            <td id="text3"></td>
+                            <td id="text4"></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th></th>
+                            <th id="column1">Train Name</th>
+                            <th id="column2">Destination</th>
+                            <th id="column3">Next Arrival</th>
+                            <th id="column4">Frequency (Minutes)</th>
+                            
+                        </tr>
+                    </tfoot>
+                </table>
+
+            <!-- Commenting out this section as test
+            Output Columns
+            would a table be better suited for this task? ask at school
             <section class="output-titles-columns">
             <div class="columns">
                 <div class="column">
@@ -126,7 +168,8 @@
                     <p>Filler Text</p>
                 </div>
                 </div> 
-            </section> <!-- Output Titles Columns Section Close -->
+            </section>Output Titles Columns Section Close
+            -->
            
             <!-- Commenting out this section as test
             Empty column divs for js to populate content from input

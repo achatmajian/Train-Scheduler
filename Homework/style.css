@@ -65,6 +65,8 @@
     background-color: #F2F8FF;
 }
 
+
+/*
 .output-titles-columns{
     width: 112%;
     margin-top: -25px;
@@ -72,6 +74,12 @@
 
 .output-content-columns{
     width: 112%;
+}
+*/
+
+#output-table{
+    width: 112%;
+    margin-top: -25px;
 }
 
 .output-buttons{
