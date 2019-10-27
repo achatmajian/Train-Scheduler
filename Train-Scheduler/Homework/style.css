@@ -1,0 +1,117 @@
+/* General Styles */
+
+#form-title{
+    margin-top: -50px;
+    margin-left: -24px;
+}
+
+/* Hero Styles */
+
+
+#hero-title{
+    color: white;
+    margin-left: 14px;
+}
+
+#hero-subtitle{
+    color: white;
+    margin-left: 14px;
+}
+
+.hero{
+    background-color:#1360E4;
+    
+}
+
+
+/* Input Form Styles */
+
+.input-form{
+    display: grid;
+    /* border: 1px solid blue; */
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    background-color: #F2F8FF;
+}
+
+.input-fields{
+    margin-top: -25px;
+}
+
+.input-buttons{
+    padding-top: 10px;
+}
+
+#submit-button{
+    background-color: #1360E4;
+    color: white;
+}
+
+#cancel-button {
+    background-color: #86B8FA;
+    color: white;
+}
+
+
+/* Output Form Styles */
+
+.output-form{
+    display: grid;
+    /* border: 1px solid blue; */
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    background-color: #F2F8FF;
+}
+
+
+/*
+.output-titles-columns{
+    width: 112%;
+    margin-top: -25px;
+}
+
+.output-content-columns{
+    width: 112%;
+}
+*/
+
+#output-table{
+    width: 112%;
+    margin-top: -25px;
+}
+
+.output-buttons{
+    padding-top: 20px;
+}
+
+#clear-selected-button{
+    background-color: #1360E4;
+    color: white;
+}
+
+#clear-all-button{
+    background-color: #86B8FA;
+    color: white;
+}
+
+
+
+/*
+Colors
+{
+    "0": "#f2f8ff",
+    "5": "#d6e8fe",
+    "10": "#bbd8fd",
+    "20": "#86b8fa",
+    "30": "#5799f5",
+    "40": "#307ced",
+    "50": "#1360e4",
+    "60": "#0047d7",
+    "70": "#0039c7",
+    "80": "#002ab3",
+    "90": "#001d9e",
+    "100": "#001287"
+}
+*/
